@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IRemote.MasterPage">
+	<ContentPage.Content>
+		<StackLayout>
+			<ContentView x:Name="LogoView">
+				<Label x:Name="LogoLabel" Margin="20,40,0,10" TextColor="White" FontSize="Large">IRemote</Label>
+			</ContentView>
+			<Button x:Name="ConnectButton" Text="Connect manager" BackgroundColor="White" TextColor="#546E7A" />
+			<Button x:Name="HelpButton" Text="Help and about" BackgroundColor="White" TextColor="#546E7A" />
+			<Button x:Name="ShowAllButton" Text="Show all remotes" BackgroundColor="White" TextColor="#546E7A" />
+			<ListView x:Name="CategoryList" SeparatorColor="#ECEFF1">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout>
+								<Label Text="{Binding}" Margin="10,5,10,5" TextColor="#546E7A">
+								</Label>
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

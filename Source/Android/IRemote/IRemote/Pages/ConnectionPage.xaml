@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IRemote.ConnectionPage" Title="Connect to IRemote">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text="Connect" Clicked = "OnConnectClicked"/>
+		<ToolbarItem Text="Disconnect" Clicked = "OnDisconnectClicked"/>
+	</ContentPage.ToolbarItems>
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="Select a device:" Margin="20,10,0,20" FontSize="18">
+			</Label>
+			<ListView x:Name="Devices" Margin="0,10,0,0" SeparatorColor="#ECEFF1">
+				<ListView.ItemTemplate>
+					<DataTemplate>
+						<ViewCell>
+							<StackLayout>
+								<Label Text="{Binding}" TextColor="#37474F" HorizontalTextAlignment="Start" VerticalTextAlignment="Center" Margin="25,10,25,0" />
+							</StackLayout>
+						</ViewCell>
+					</DataTemplate>
+				</ListView.ItemTemplate>
+			</ListView>
+			<Label x:Name = "status" Margin="20,10,0,20" FontSize="18">
+			</Label>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

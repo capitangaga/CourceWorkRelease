@@ -1,0 +1,34 @@
+
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRemote", "IRemote\IRemote.csproj", "{9FAA7CEF-DA8C-40C9-81A7-8B9C3BC95ABD}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IRemote.Droid", "Droid\IRemote.Droid.csproj", "{32449358-AD42-463D-B44C-87AA3FF14ACE}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9FAA7CEF-DA8C-40C9-81A7-8B9C3BC95ABD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9FAA7CEF-DA8C-40C9-81A7-8B9C3BC95ABD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9FAA7CEF-DA8C-40C9-81A7-8B9C3BC95ABD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9FAA7CEF-DA8C-40C9-81A7-8B9C3BC95ABD}.Release|Any CPU.Build.0 = Release|Any CPU
+		{32449358-AD42-463D-B44C-87AA3FF14ACE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{32449358-AD42-463D-B44C-87AA3FF14ACE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{32449358-AD42-463D-B44C-87AA3FF14ACE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{32449358-AD42-463D-B44C-87AA3FF14ACE}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		Policies = $0
+		$0.DotNetNamingPolicy = $1
+		$1.DirectoryNamespaceAssociation = None
+		$1.ResourceNamePolicy = FileFormatDefault
+		$0.StandardHeader = $2
+		$2.Text = 
+		$2.IncludeInNewFiles = True
+		$0.VersionControlPolicy = $3
+		$3.inheritsSet = Mono
+	EndGlobalSection
+EndGlobal

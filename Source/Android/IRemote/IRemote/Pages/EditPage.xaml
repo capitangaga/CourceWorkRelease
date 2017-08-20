@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IRemote.EditPage">
+	<ContentPage.ToolbarItems>
+		<ToolbarItem Text = "Save" Clicked = "OnSaveClicked"/>
+	</ContentPage.ToolbarItems>
+
+	<ContentPage.Content>
+		<ScrollView>
+			<StackLayout >
+				<StackLayout Orientation="Horizontal">
+					<Label Text="Name " HorizontalOptions="Start" FontSize="Medium" Margin="15,15,5,5"/>
+					<Entry x:Name="RemoteNameEntery" HorizontalOptions="FillAndExpand" Margin="0,0,5,5" />
+				</StackLayout>
+				<StackLayout Orientation="Horizontal">
+					<Label Text="Category " HorizontalOptions="Start" FontSize="Medium" Margin="15,15,5,5"/>
+					<Entry x:Name="CategoryEntery" HorizontalOptions="FillAndExpand" Margin="0,0,5,5" />
+					<Picker x:Name="CategoryPicker" HorizontalOptions="End" Title="Select"/>
+				</StackLayout>
+				<Label Text = "Main" Margin = "10,10,10,10" FontSize = "Medium"/>
+				<Grid x:Name = "MainGrid" >
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					
+				</Grid>
+				<Label Text = "Additional" Margin = "10,10,10,10" FontSize = "Medium"/>
+				<Grid x:Name = "AdditionalGrid" >
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					
+				</Grid>
+				<Label Text = "Numbers" Margin = "10,10,10,10" FontSize = "Medium"/>
+				<Grid x:Name = "NumbersGrid">
+					<Grid.RowDefinitions>
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+						<RowDefinition Height="Auto" />
+					</Grid.RowDefinitions>
+					<Grid.ColumnDefinitions>
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+						<ColumnDefinition Width="*" />
+					</Grid.ColumnDefinitions>
+					
+				</Grid>
+				<StackLayout x:Name = "CustomButtonsEdit">
+					
+				</StackLayout>
+			</StackLayout>
+		</ScrollView>
+	</ContentPage.Content>
+</ContentPage>

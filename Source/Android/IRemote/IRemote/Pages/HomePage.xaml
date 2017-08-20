@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IRemote.HomePage">
+	<ContentPage.Content>
+		<StackLayout>
+			<Label Text="HI!" FontSize="72" HorizontalTextAlignment="Center" Margin="0,30,0,30">
+			</Label>
+			<Label x:Name="aboutLabel" FontSize="Medium" HorizontalTextAlignment="Center" VerticalTextAlignment="Center" Margin="30,0,30,0" LineBreakMode="WordWrap" />
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>

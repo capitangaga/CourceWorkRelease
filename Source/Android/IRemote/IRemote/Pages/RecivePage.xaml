@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" x:Class="IRemote.RecivePage">
+	<ContentPage.Content>
+		<StackLayout Orientation = "Vertical">
+			<Label Text="Press a button on your real remote. If app not working properly while reciving, please, restart it" Margin = "50" HorizontalTextAlignment = "Center" VerticalTextAlignment = "Center" FontSize="20"/>	
+			<Button Text="Calancell reciving" Clicked="Handle_Clicked"	/>
+		</StackLayout>
+	</ContentPage.Content>
+</ContentPage>
